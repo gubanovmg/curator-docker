@@ -6,8 +6,5 @@ The list of tasks currently are:
 
 ## Configuration
 
-`ELASTICSEARCH_HOST` - The hostname or IP address of an elasticsearch cluster.
+`CURATOR_VERSION` - version curator.
 
-`INDICES_PREFIXES` - Prefixes of indices to optimize/purge, space separted. Defaults to "logstash"
-
-`MAX_INDEX_AGE` - The maximum age (in days) a logstash index can be until it is deleted.
