@@ -4,7 +4,7 @@ ENV CURATOR_VERSION 5.8.4
 ENV ELASTICSEARCH_PORT 9200
 ENV INDICES_PREFIXES fluentbit-
 
-RUN apk --update add python py-pip bash && pip install elasticsearch-curator==$CURATOR_VERSION
+RUN apk --update add python3 py-pip bash && pip install elasticsearch-curator==$CURATOR_VERSION
 
 ADD docker-entrypoint.sh /
 ADD tasks/optimize-indices.sh /etc/periodic/
